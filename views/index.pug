@@ -1,5 +1,12 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1.title= title
+  p.title-para Welcome to #{title}
+  .message-list
+   for message in messages
+    .message
+     p.text=message.text
+     p.user Author- #{message.user}
+     p.date Time: #{message.added}
+  a.new-message(href='/new') new
