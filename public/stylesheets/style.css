@@ -8,7 +8,7 @@ body {
   background-color: rgb(19, 19, 19);
 }
 .title {
-  padding: 1em;
+  padding: 1rem;
   color: rgb(186, 218, 139);
 }
 .title-para {
@@ -31,25 +31,35 @@ body {
   font-size: 1.2rem;
 }
 .user {
-  margin: 0.5rem;
+  margin: auto;
   padding: 0.3rem;
-  border: 1px solid black;
-  background-color: rgba(17, 0, 255, 0.295);
+  padding-top: 0rem;
+  opacity: 0.5;
+  position: relative;
+  left: 3rem;
+  width: max-content;
 }
-.new-message {
+.link-button {
   background-color: indigo;
-  padding: 1rem;
-  margin: 1rem;
+  padding: 1rem 5rem;
+  margin: 1rem auto;
+  width: max-content;
   color: white;
   display: block;
+  border: 2px solid black;
+  text-decoration: none;
 }
-.new-message:visited {
+.link-button:hover {
+  transform: scale(1.05);
+}
+.link-button:visited {
   color: white;
 }
 
 /* form*/
 .form-heading {
   padding: 1rem;
+  font-size:1.5rem;
 }
 .form {
   width: 50%;
@@ -65,16 +75,18 @@ body {
   margin: 0 auto;
 }
 .submit-button {
-  padding: 1rem;
+  padding: 0.5rem;
   font-size: 1.3rem;
   margin: 0 auto;
 }
-.back {
-  margin: 1rem;
-  padding: 1rem;
-  display: block;
-  background-color: indigo;
-}
-.back:visited {
-  color: white;
+
+
+@media only screen and (max-width: 760px) {
+  .message-list {
+    max-width: 85%;
+  }
+  .form {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
