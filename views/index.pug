@@ -7,6 +7,6 @@ block content
    for message in messages
     .message
      p.text=message.text
-     p.user Author- #{message.user}
-     p.date Time: #{message.added}
-  a.new-message(href='/new') new
+     p.user -#{message.user}
+     p.date Date: #{message.added}
+  a.link-button(href='/new') new

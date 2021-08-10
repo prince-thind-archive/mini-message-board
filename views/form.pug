@@ -1,12 +1,12 @@
 extends layout
 
 block content
-  h1.form-heading Leave your messages here.
+  h1.form-heading Leave your messages here
   form.form(method="POST" action="/new")
    label Your Name
-    input(type='text' name='author')
+    input(type='text' name='author' required)
    label Message
-    input(type='text' name='text')
+    input(type='text' name='text' required)
    button.submit-button(type='submit') Submit
-  a.back(href='/') back
+  a.link-button(href='/') back
 
